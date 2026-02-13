@@ -344,37 +344,7 @@ export default function Home() {
                   Organization
                 </span>
               </h3>
-              <div className="space-y-8">
-                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
-                  <CardContent className="p-8">
-                    <div className="flex items-start gap-6">
-                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <img src="../images/himatif.jpg" alt="himatif" className="rounded-lg"/>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-white mb-2">
-                          Information Technology Student Association (HIMATIF)
-                        </h3>
-                        <p className="text-pink-400 mb-2">
-                          Member • Nov 2023 - Present
-                        </p>
-                        <div className="flex-1 ">
-                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
-                            <li>
-                              Participate in various activities organized by HIMATIF.
-                            </li>
-                            <li>
-                              Actively participate in supporting and 
-                              ensuring the success of HIMATIF's work programs.
-                            </li>                            
-                          </ul>
-                        </div>
-
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-                
+              <div className="space-y-8">            
                 <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
@@ -488,6 +458,35 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/himatif.jpg" alt="himatif" className="rounded-lg"/>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          Information Technology Student Association (HIMATIF)
+                        </h3>
+                        <p className="text-pink-400 mb-2">
+                          Member • Nov 2023 - Present
+                        </p>
+                        <div className="flex-1 ">
+                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                            <li>
+                              Participate in various activities organized by HIMATIF.
+                            </li>
+                            <li>
+                              Actively participate in supporting and 
+                              ensuring the success of HIMATIF's work programs.
+                            </li>                            
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card> 
               </div>
             </div>
           </div>
