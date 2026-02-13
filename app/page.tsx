@@ -52,6 +52,8 @@ export default function Home() {
     { name: "GitHub", icon: "./images/icons/github.png" },
     { name: "VS Code", icon: "./images/icons/vscode.png" },
     { name: "Python", icon: "./images/icons/python.png" },
+    { name: "Selenium", icon: "./images/icons/selenium.jpg" }, 
+    { name: "Cypress", icon: "./images/icons/cypress.jpg" },
 
   ];
 
@@ -88,18 +90,12 @@ export default function Home() {
               >
                 Experience
               </a>
-              <a
+              {/* <a
                 href="#certificates"
                 className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
               >
                 Certificates
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
-              >
-                Contact
-              </a>
+              </a>               */}
             </div>
           </div>
         </div>
@@ -147,7 +143,7 @@ export default function Home() {
 
           <div className="flex gap-3 mb-4">
             <a
-              href="/form/CuriculumVitae_AyuEnissa.pdf"
+              href="/form/Curriculum Vitae-Ayu Enissa Maretty Sinaga.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -207,7 +203,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section id="about" className="py-20">
         {/* SECTION TITLE */}
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-center gap-3 mb-12">
           <div className="w-6 h-6 text-blue-400 animate-pulse" />
@@ -233,21 +229,20 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-400 leading-relaxed">
-                A fifth-semester Information Technology student at the Del
-                Institute of Technology, enthusiastic about pursuing a career in
-                Software Engineering (UI/UX Design or Data Analysis).
-                Experienced in organizing several medium-scale events, with
-                responsibilities that include data processing, UI/UX design
-                using Figma, and system analysis. Able to work with MySQL and
-                PostgreSQL databases. Possess strong communication skills,
-                effective teamwork, and a results-oriented mindset.
-              </p>
+                I am a Software Engineering professional with expertise in UI/UX
+                 Design and Software Quality Assurance (QA). I specialize in creating 
+                 user-centric interfaces using Figma, ensuring every design is backed 
+                 by solid system analysis and intuitive user flows.
 
-              <div className="bg-blue-950/30 border border-blue-800/30 rounded-lg p-4">
-                <p className="text-blue-300 italic">
-                  &quot;Students are agents of change.&quot;
-                </p>
-              </div>              
+                Beyond design, I have a strong technical background 
+                in Software Testing, specifically using Selenium for automated 
+                testing to ensure application reliability and performance. I am 
+                highly proficient in managing and validating data using MySQL and 
+                PostgreSQL databases. With a results-oriented mindset and a proven 
+                track record in coordinating medium-scale projects, I bridge the gap
+                 between aesthetic excellence and technical precision to deliver 
+                 high-quality, bug-free digital solutions.
+              </p>
             </div>
 
             {/* RIGHT COLUMN - TOOLS */}
@@ -293,123 +288,213 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold mb-4">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Experience
+                Experience & Organization
               </span>
             </h2>
-            <p className="text-gray-400">
-              My professional journey and achievements
-            </p>
           </div>
 
-          <div className="space-y-8">
-            <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <Briefcase className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      Event Organizer
-                    </h3>
-                    <p className="text-blue-400 mb-2">
-                      Various Organizations • 2020 - Present
-                    </p>
-                    <p className="text-gray-400">
-                      Led and coordinated multiple medium-scale events, managing
-                      data processing, UI/UX design implementation, and system
-                      analysis. Collaborated with cross-functional teams to
-                      ensure successful event execution.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      <span className="px-3 py-1 bg-blue-900/50 border border-blue-700/30 rounded-full text-xs text-blue-300">
-                        Event Management
-                      </span>
-                      <span className="px-3 py-1 bg-blue-900/50 border border-blue-700/30 rounded-full text-xs text-blue-300">
-                        Team Leadership
-                      </span>
-                      <span className="px-3 py-1 bg-blue-900/50 border border-blue-700/30 rounded-full text-xs text-blue-300">
-                        Data Processing
-                      </span>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-6">
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Experience
+                </span>
+              </h3>
+              <div className="space-y-8">
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/DEL.png" alt="" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          Bioinformatics and Biodiversity Conference
+                        </h3>
+                        <p className="text-blue-400 mb-2">
+                          Committee Staff • Nov 2025
+                        </p>
+                        <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                          <li>
+                            Ensure that all event supplies are in good
+                            condition.
+                          </li>
+                          <li>
+                            Manage the flow of conference activities so that
+                            guests can attend the event in an orderly manner in
+                            the space that has been divided into a semi-parallel
+                            format.
+                          </li>
+                          <li>
+                            Support the smooth running of the Q&A session by
+                            ensuring time coordination, participant readiness,
+                            and a conducive discussion atmosphere.
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                  </CardContent>
+                </Card>                
+              </div>
+            </div>
 
-            <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <Code className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      UI/UX Designer
-                    </h3>
-                    <p className="text-purple-400 mb-2">
-                      Freelance • 2021 - Present
-                    </p>
-                    <p className="text-gray-400">
-                      Designed user interfaces and experiences using Figma for
-                      various projects. Focused on creating intuitive and
-                      visually appealing designs that enhance user engagement
-                      and satisfaction.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      <span className="px-3 py-1 bg-purple-900/50 border border-purple-700/30 rounded-full text-xs text-purple-300">
-                        Figma
-                      </span>
-                      <span className="px-3 py-1 bg-purple-900/50 border border-purple-700/30 rounded-full text-xs text-purple-300">
-                        UI Design
-                      </span>
-                      <span className="px-3 py-1 bg-purple-900/50 border border-purple-700/30 rounded-full text-xs text-purple-300">
-                        UX Research
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-6">
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Organization
+                </span>
+              </h3>
+              <div className="space-y-8">
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/himatif.jpg" alt="himatif" className="rounded-lg"/>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          Information Technology Student Association (HIMATIF)
+                        </h3>
+                        <p className="text-pink-400 mb-2">
+                          Member • Nov 2023 - Present
+                        </p>
+                        <div className="flex-1 ">
+                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                            <li>
+                              Participate in various activities organized by HIMATIF.
+                            </li>
+                            <li>
+                              Actively participate in supporting and 
+                              ensuring the success of HIMATIF's work programs.
+                            </li>                            
+                          </ul>
+                        </div>
 
-            <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <Briefcase className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      IT Student
-                    </h3>
-                    <p className="text-pink-400 mb-2">
-                      Del Institute of Technology • 2021 - Present
-                    </p>
-                    <p className="text-gray-400">
-                      Fifth-semester student specializing in Software
-                      Engineering with focus on UI/UX Design and Data Analysis.
-                      Proficient in MySQL and PostgreSQL database management.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      <span className="px-3 py-1 bg-pink-900/50 border border-pink-700/30 rounded-full text-xs text-pink-300">
-                        MySQL
-                      </span>
-                      <span className="px-3 py-1 bg-pink-900/50 border border-pink-700/30 rounded-full text-xs text-pink-300">
-                        PostgreSQL
-                      </span>
-                      <span className="px-3 py-1 bg-pink-900/50 border border-pink-700/30 rounded-full text-xs text-pink-300">
-                        System Analysis
-                      </span>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/himatif.jpg" alt="himatif" className="rounded-lg"/>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          HIMATIF 2025 Cadre Formation Committee
+                        </h3>
+                        <p className="text-pink-400 mb-2">
+                          Documentation Division • Nov 2025
+                        </p>
+                        <div className="flex-1 ">
+                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                            <li>
+                              Manage the event documentation process, including
+                              taking photos, recording activities, and archiving
+                              the results.
+                            </li>
+                            <li>
+                              Coordinate with other divisions to ensure each
+                              event is properly documented and meets reporting
+                              requirements.
+                            </li>
+                            <li>
+                              Compile the documentation into reports or internal
+                              publications.
+                            </li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/himatif.jpg" alt="himatif" className="rounded-lg"/>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          HIMATIF 2024 Cadre Formation Committee
+                        </h3>
+                        <p className="text-pink-400 mb-2">
+                          Documentation Division • Nov 2024
+                        </p>
+                        <div className="flex-1 ">
+                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                            <li>
+                              Manage the event documentation process, including
+                              taking photos, recording activities, and archiving
+                              the results.
+                            </li>
+                            <li>
+                              Coordinate with other divisions to ensure each
+                              event is properly documented and meets reporting
+                              requirements.
+                            </li>
+                            <li>
+                              Compile the documentation into reports or internal
+                              publications.
+                            </li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm hover:bg-blue-950/50 transition-all duration-300 hover:translate-x-2 group">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <img src="../images/DEL.PNG" alt="himatif" className="rounded-lg"/>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          Lomba Cerdas Cermat - IT Del x Inalum
+                        </h3>
+                        <p className="text-pink-400 mb-2">
+                          SUpervisor Division • Sep 2024
+                        </p>
+                        <div className="flex-1 ">
+                          <ul className="text-gray-400 list-disc list-outside space-y-2 pl-5">
+                            <li>
+                              Ensure that there is no cheating between participants who take part in the LCC
+                            </li>
+                            <li>
+                              Ensure that there are no technical or logistical 
+                              obstacles that could hinder the event.
+                            </li>
+                            <li>
+                              Ensure that the competition runs smoothly 
+                              according to the schedule that has been set.
+                            </li>
+                            <li>
+                              Documenting the event, including recording 
+                              activities and key moments.
+                            </li>
+                            <li>
+                              Acting as a timekeeper (stopwatch handler) to ensure participants 
+                              answer questions within the allotted time limit.
+                            </li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section
+      {/* <section
         id="certificates"
         className="min-h-screen flex items-center justify-center px-6 py-20"
       >
@@ -437,14 +522,8 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-white mb-2">
-                      Certificate Title {cert}
+                      {cert}
                     </h3>
-                    <p className="text-blue-400 text-sm mb-2">
-                      Issuing Organization
-                    </p>
-                    <p className="text-gray-400 text-sm mb-4">
-                      Issued: December 2023
-                    </p>
                     <Button
                       variant="outline"
                       className="w-full border-blue-500 text-blue-400 hover:bg-blue-950/50"
@@ -457,94 +536,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
-
-      <section
-        id="contact"
-        className="min-h-screen flex items-center justify-center px-6 py-20"
-      >
-        <div className="max-w-4xl w-full">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Get In Touch
-              </span>
-            </h2>
-            <p className="text-gray-400">
-              Let's create something amazing together
-            </p>
-          </div>
-
-          <Card className="bg-blue-950/30 border-blue-800/30 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-gray-300 mb-2">Name</label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 bg-slate-900/50 border border-blue-800/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-300 mb-2">Email</label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 bg-slate-900/50 border border-blue-800/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-300 mb-2">Message</label>
-                  <textarea
-                    rows={6}
-                    className="w-full px-4 py-3 bg-slate-900/50 border border-blue-800/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="Your message..."
-                  />
-                </div>
-                <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-6 text-lg">
-                  Send Message
-                  <Mail className="ml-2 w-5 h-5" />
-                </Button>
-              </form>
-
-              <div className="mt-8 pt-8 border-t border-blue-800/30">
-                <div className="flex justify-center gap-6">
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    <Github className="w-5 h-5" />
-                    <span>GitHub</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                    <span>LinkedIn</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
-                  >
-                    <Instagram className="w-5 h-5" />
-                    <span>Instagram</span>
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
+      </section> */}
       <footer className="border-t border-blue-900/20 bg-slate-950/80 backdrop-blur-lg">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="text-center text-gray-400">
-            <p>© 2023 yukawdinee. All rights reserved.</p>
-            <p className="mt-2 text-sm">
-              Built with Next.js, React & Tailwind CSS
-            </p>
+            <p>© 2023 Ayu Enissa Sinaga. All rights reserved.</p>
           </div>
         </div>
       </footer>
